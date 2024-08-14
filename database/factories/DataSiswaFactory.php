@@ -17,6 +17,7 @@ class DataSiswaFactory extends Factory
      */
     public function definition(): array
     {
+        //melakukan randomisasi data untuk data dummy
         return [
             'nama' => $this->faker->name(),
             'tempat_lahir' => $this->faker->city(),

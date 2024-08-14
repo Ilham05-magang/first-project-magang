@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        //melakukan pengulangan atau merandom data yang sudah di setting di seed
         DataSiswa::factory()->count(10)->create();
     }
 }

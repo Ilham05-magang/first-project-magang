@@ -78,7 +78,7 @@ class ControllerSiswa extends Controller
     {
         $query = $request->input('query');
 
-        // Cari data siswa berdasarkan nama
+        // Cari data siswa berdasarkan nama, sekolah, atau tempat lahir
         $siswas = DataSiswa::where('nama', 'LIKE', '%' . $query . '%')
                         ->orWhere('sekolah', 'LIKE', '%' . $query . '%')
                         ->orWhere('tempat_lahir', 'LIKE', '%' . $query . '%')
@@ -87,7 +87,7 @@ class ControllerSiswa extends Controller
         $title = 'Hasil Pencarian';
 
         // Tampilkan hasil pencarian di view
-        return view('Home', compact('siswas', 'title'));
+        return view('search', compact('siswas', 'title'));
     }
 
 }

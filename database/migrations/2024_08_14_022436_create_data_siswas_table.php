@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        //membuat tabel data siswa di database
         Schema::create('data_siswas', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
