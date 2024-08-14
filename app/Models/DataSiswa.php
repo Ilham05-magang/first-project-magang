@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class DataSiswa extends Model
 {
     use HasFactory;
+
     protected $casts = [
         'tanggal_lahir' => 'date:Y-m-d',
     ];
