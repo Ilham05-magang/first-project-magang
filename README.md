@@ -35,7 +35,7 @@ npm run dev
 php artisan serve 
 ```
 
--   And go to **http://localhost:8000/**
+-   And go to **http://127.0.0.1:8000/**  atau ( CRTL + klik ) link yang ada di terminal **php arisan serve**
 
 ## Cara refresh branch local vsc
 ```sh
